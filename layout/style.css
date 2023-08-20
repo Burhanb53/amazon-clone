@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.containerbody{
+    width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    padding: 0px 10px;
+    height: 70px;
+    contain: content;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+
+
+}
+
+.amazonlogo {
+    display: flex;
+    height: 30px;
+    contain: content;
+    align-items: center;
+    padding: 2px 10px 5px 5px;
+}
+
+.amazonlogo:hover {
+    border: 2px solid white;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.address {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    contain: content;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+}
+
+.address:hover {
+    border: 2px solid white;
+    padding-right: 5px;
+    padding-left: 11px;
+}
+
+.item {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    padding-bottom: 10px;
+    padding-left: 12px;
+
+}
+
+.searchbar {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.searchicon {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    padding-right: 5px;
+}
+
+.flag {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.flag:hover {
+    border: 2px solid white;
+    padding-left: 11px;
+}
+
+.language {
+    display: inline-flex;
+    contain: content;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+
+}
+
+.account {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 10vw;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.account:hover {
+    border: 2px solid white;
+    padding-right: 11px;
+}
+
+.order {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.order:hover {
+    border: 2px solid white;
+    padding-right: 11px;
+}
+
+.cart {
+    display: inline-flex;
+    height: 30px;
+    contain: content;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.cart:hover {
+    border: 2px solid white;
+}
+
+.containitem {
+    display: flex;
+    height: 40px;
+    contain: content;
+    background-color: rgb(26, 19, 61);
+    color: white;
+
+}
+@media screen and (max-width:1000px){
+    .containitem ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 3px 10px;
+    }
+    .containitem {
+        display: flex;
+        height: 12vh;
+        contain: content;
+        background-color: rgb(26, 19, 61);
+        color: white;
+    
+    }
+}
+
+.i1 {
+    display: inline-flex;
+    padding: 3px 10px;
+}
+
+.containitem ul {
+    display: inline-flex;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.i1:hover {
+    border: 2px solid white;
+    padding: 2px 8px;
+}
+
+main {
+    contain: content;
+    background-color: #dbdef0;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.container {
+    background-color: #d8dcf4;
+    padding: 10px;
+}
+
+.items {
+    position: relative;
+    padding: 0px 15px;
+    background-color: #d8dcf4;
+    contain: content;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width:1000px) {
+    .items {
+        padding: 0px 15px;
+        background-color: #d8dcf4;
+        contain: content;
+        display: grid;
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (max-width:1000px){
+    .box1 img{
+        padding: 0px 50px;
+       position: relative;
+       justify-content: center;
+    }
+}
+.box1 {
+    height: 350px;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    contain: content;
+    padding: 15px;
+    text-align: center;
+    align-content: center;
+    display: inline-grid;
+}
+
+.class1 {
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0px 10px 30px 10px;
+    padding: 13px;
+    height: 220px;
+    width: 95vw;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    contain: content;
+    overflow-x: scroll;
+    scroll-behavior: auto;
+}
+@media screen and (max-width:1000px){
+    .class1 {
+        display: inline-flex;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        margin: 0px 10px 30px 10px;
+        padding: 13px;
+        height: 220px;
+        width: 90vw;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        contain: content;
+        overflow-x: scroll;
+        scroll-behavior: auto;
+    }
+}
+.b1 {
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+
+.backtop {
+    background-color: #2e3c4e;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    contain: content;
+}
+
+.backtop a {
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+}
+
+.details {
+    background-color: #282235;
+    padding: 50px 20px;
+    contain: content;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width:1000px){
+    
+.details {
+    background-color: #282235;
+    padding: 50px 20px;
+    contain: content;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto ;
+}
+}
+.box2 {
+    background-color: #282235;
+    color: white;
+    contain: content;
+    padding: 5px 70px;
+    display: inline-grid;
+    width: 100%;
+}
+
+.box2 ul {
+    list-style-type: none;
+}
+
+.box2 ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.country {
+    background-color: #282235;
+    contain: content;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+@media screen and (max-width:1000px){
+    .countryname{
+        line-height: 40px;
+    }
+}
+.countryname h3 {
+    word-spacing: 20px;
+}
+
+.country h3 {
+    display: inline-flex;
+}
+
+.copyright {
+    background-color: #131A22;
+    contain: content;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
